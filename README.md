@@ -7,16 +7,18 @@ Set your environment first.
 For assistant and agent samples:
 
 ```powershell
-$env:CUSTODIAN_SDK_BASE_URL="https://platform.custodianlabs.io/v1"
 $env:CUSTODIAN_SDK_API_KEY="your-api-key"
 ```
 
 For GuardianLayer masking samples:
 
 ```powershell
-$env:CUSTODIAN_MASKING_BASE_URL="https://your-masking-api-host"
 $env:CUSTODIAN_SDK_API_KEY="your-api-key"
 ```
+
+`GuardianLayer()` now defaults to `https://privacy.custodianlabs.io`, so you only need to set `CUSTODIAN_MASKING_BASE_URL` if you want to override that host.
+
+`Assistant`, `Agent`, and `create_assistant()` already default to the production platform endpoint, so you only need `CUSTODIAN_SDK_BASE_URL` if you want to override the host.
 
 Files in this folder:
 
