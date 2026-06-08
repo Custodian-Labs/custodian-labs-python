@@ -2,6 +2,29 @@
 
 This folder contains very simple examples for customers using the SDK.
 
+## Install First
+
+Create and activate a virtual environment from the repository root:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+If you want to run these samples against the published SDK:
+
+```powershell
+pip install custodian-labs
+```
+
+If you are running the samples from this repository while developing locally, install the SDK from the repo root instead:
+
+```powershell
+pip install -e .
+```
+
+## Set Environment Variables
+
 Set your environment first.
 
 For assistant and agent samples:
@@ -32,6 +55,14 @@ Files in this folder:
 - `08_simple_websocket_bridge.py`
 - `09_simple_websocket_browser.html`
 - `sample_pii_data.csv`
+
+## Run A Sample
+
+From the repository root:
+
+```powershell
+python git_samples\01_simple_assistant_cmd.py
+```
 
 Run the CSV-based examples from inside the `git_samples` folder so the sample file path works exactly as written:
 
