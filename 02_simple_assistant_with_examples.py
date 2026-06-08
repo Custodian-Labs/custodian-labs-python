@@ -1,20 +1,20 @@
-from custodian_labs import Assistant
+from custodian_labs import Custodian
 
 
-assistant = Assistant(
+custodian = Custodian(
     model="gpt-4o",
     system_prompt="You are a helpful assistant for customer support.",
     privacy_enabled=True,
 )
 
-assistant.add_examples(
+custodian.add_examples(
     [
         {"user": "How do I reset my password?", "assistant": "Go to settings, open security, and choose reset password."},
         {"user": "How do I invite teammates?", "assistant": "Open workspace settings, then add members by email."},
     ]
 )
 
-app = assistant.deploy()
+app = custodian.deploy()
 
 reply = app.chat("How do I invite a new teammate?")
 if reply is not None:
