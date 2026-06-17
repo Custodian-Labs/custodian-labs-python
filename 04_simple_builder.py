@@ -13,6 +13,12 @@ app = (
     .deploy()
 )
 
+# Chat using default model (gpt-4o)
 reply = app.chat("Give me a short overdue invoice policy.")
 if reply is not None:
     print(reply.response)
+
+# Optional: Override model for this chat request
+# reply = app.chat("Give me a short overdue invoice policy.", model="claude-3.5-sonnet")
+# if reply is not None:
+#     print(reply.response)

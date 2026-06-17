@@ -16,7 +16,13 @@ custodian.add_examples(
 
 app = custodian.deploy()
 
+# Chat using default model (gpt-4o)
 reply = app.chat("How do I invite a new teammate?")
 if reply is not None:
     print(reply.response)
     print(reply.session_id)
+
+# Optional: Override model for this chat request
+# reply = app.chat("How do I invite a new teammate?", model="claude-3.5-sonnet")
+# if reply is not None:
+#     print(reply.response)

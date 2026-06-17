@@ -9,6 +9,12 @@ app = create_assistant(
 
 print(app.chat_url)
 
+# Chat using default model (gpt-4o)
 reply = app.chat("What should a new admin do first?")
 if reply is not None:
     print(reply.response)
+
+# Optional: Override model for this chat request
+# reply = app.chat("What should a new admin do first?", model="claude-3.5-sonnet")
+# if reply is not None:
+#     print(reply.response)

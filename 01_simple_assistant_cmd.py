@@ -15,5 +15,8 @@ print("CMD chat is ready. Type your message and press Enter.")
 print(app.chat_url)
 print("Type 'exit' (or 'quit') to stop.\n")
 
+# Interactive chat using default model (gpt-4o)
+# Tip: You can also pass a model parameter to chat() for non-interactive requests
+# result = app.chat("Your message here", model="claude-3.5-sonnet")
 result = app.chat()
 print(result)

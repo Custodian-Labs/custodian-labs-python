@@ -21,7 +21,14 @@ team = AgentTeam(
 
 app = team.deploy()
 
+# Chat using agents' default models (gpt-4o)
 reply = app.chat("How many people are in the uploaded file and which cities do they live in?")
 if reply is not None:
     print(reply.response)
     print(reply.selected_agent)
+
+# Optional: Override model for this chat request
+# reply = app.chat("How many people are in the uploaded file and which cities do they live in?", model="claude-3.5-sonnet")
+# if reply is not None:
+#     print(reply.response)
+#     print(reply.selected_agent)
