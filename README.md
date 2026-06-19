@@ -1,4 +1,4 @@
-# custodian-labs Python Samples
+# Custodian Labs Python Samples
 
 Example scripts for the [`custodian-labs`](https://pypi.org/project/custodian-labs/) Python SDK.
 
