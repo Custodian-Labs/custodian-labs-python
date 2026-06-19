@@ -37,7 +37,7 @@ $env:CUSTODIAN_SDK_API_KEY = "custodian_labs_xxxx..."
 
 | File | What it shows |
 |---|---|
-| `01_simple_AI_agent_live.py` | Deploy a prodution-ready AI agent in 5 lines (not including spaces) |
+| `01_simple_AI_agent_RAG.py` | Deploy a prodution-ready (+RAG) AI agent in 5 lines (not including spaces) |
 | `02_simple_AI_few_shot_learning.py` | Add few-shot examples to guide the assistant's responses |
 | `03_simple_AI_builder_chain.py` | Fluent `AssistantBuilder` chain — configure and deploy in one expression |
 | `04_AI_agent_application_example.py` | Production-style example: Legal assistant with a PDF knowledge base |
