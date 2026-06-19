@@ -1,5 +1,6 @@
 from custodian_labs import AssistantBuilder
 
+#Chaining together builder methods to configure and deploy an assistant in one step. This is ideal for simple use cases and quick iterations.
 
 app = (
     AssistantBuilder()

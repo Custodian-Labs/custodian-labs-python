@@ -3,7 +3,7 @@ from custodian_labs import Custodian
 
 custodian = Custodian(
     model="gpt-4o",
-    system_prompt="You are a helpful assistant for customer support.",
+    system_prompt="You are a customer support agent.",
     privacy_enabled=True,
 )
 
@@ -17,7 +17,7 @@ custodian.add_examples(
 app = custodian.deploy()
 
 # Chat using default model (gpt-4o)
-reply = app.chat("How do I invite a new teammate?")
+reply = app.chat("How do I invite a new teammate?") 
 if reply is not None:
     print(reply.response)
     print(reply.session_id)

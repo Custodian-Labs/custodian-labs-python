@@ -14,7 +14,7 @@ team = AgentTeam(
             model="gpt-4o",
             system_prompt="Answer questions about the uploaded CSV file.",
             topics=["data", "csv", "customer", "file"],
-        ).add_data_source_file("sample_pii_data.csv"),
+        ).add_data_source_file("data_examples/pii_data.csv"),
     ],
     routing_mode="single",
 )
