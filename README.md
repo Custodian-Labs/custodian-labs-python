@@ -1,5 +1,7 @@
 # Custodian Labs Python Samples
 
+Build production-ready AI-agents in 5 lines.
+
 Example scripts for the [`custodian-labs`](https://pypi.org/project/custodian-labs/) Python SDK.
 
 - **Docs:** https://docs.custodianlabs.io
