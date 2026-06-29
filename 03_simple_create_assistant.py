@@ -4,6 +4,7 @@ from custodian_labs import create_assistant
 app = create_assistant(
     model="gpt-4o",
     prompt="You are a helpful assistant for onboarding new users.",
+    name="Onboarding AI",
     privacy_enabled=True,
 )
 

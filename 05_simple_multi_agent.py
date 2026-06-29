@@ -2,6 +2,7 @@ from custodian_labs import Agent, AgentTeam
 
 
 team = AgentTeam(
+    name="Data Operations Team",
     agents=[
         Agent(
             name="billing",
@@ -20,6 +21,9 @@ team = AgentTeam(
 )
 
 app = team.deploy()
+
+# Optional: override the deployed app name
+# app = team.deploy(name="Billing and Data Team")
 
 # Chat using agents' default models (gpt-4o)
 reply = app.chat("How many people are in the uploaded file and which cities do they live in?")

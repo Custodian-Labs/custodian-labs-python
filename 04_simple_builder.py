@@ -4,6 +4,7 @@ from custodian_labs import AssistantBuilder
 app = (
     AssistantBuilder()
     .with_model("gpt-4o")
+    .with_name("Finance Policy AI")
     .with_prompt("You are a helpful finance assistant.")
     .with_examples(
         [

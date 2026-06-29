@@ -4,6 +4,7 @@ from custodian_labs import Custodian
 custodian = Custodian(
     model="gpt-4o",
     system_prompt="You are a helpful assistant, and you are given a data file to answer questions about the data.",
+    name="PII Data Assistant",
     privacy_enabled=False,
 )
 

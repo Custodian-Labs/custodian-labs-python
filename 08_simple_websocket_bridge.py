@@ -15,6 +15,7 @@ async def websocket_chat(websocket: WebSocket) -> None:
     sdk_app = create_assistant(
         model="gpt-4o",
         prompt="You are a helpful assistant exposed through a websocket bridge.",
+        name="WebSocket Bridge AI",
         privacy_enabled=True,
     )
 

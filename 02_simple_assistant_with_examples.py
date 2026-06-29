@@ -4,6 +4,7 @@ from custodian_labs import Custodian
 custodian = Custodian(
     model="gpt-4o",
     system_prompt="You are a helpful assistant for customer support.",
+    name="Customer Support AI",
     privacy_enabled=True,
 )
 
